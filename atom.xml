@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>咕咕达Blog</title>
+  
+  <subtitle>这是最好的时代，这是最坏的时代，我们一无所有，我们巍然矗立</subtitle>
+  <link href="https://zjd007.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://zjd007.github.io/"/>
+  <updated>2022-03-23T06:20:53.754Z</updated>
+  <id>https://zjd007.github.io/</id>
+  
+  <author>
+    <name>Junda</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://zjd007.github.io/2022/032216107.html"/>
+    <id>https://zjd007.github.io/2022/032216107.html</id>
+    <published>2022-03-22T13:10:06.890Z</published>
+    <updated>2022-03-23T06:20:53.754Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>First blog of zjd(2022.3.21)</title>
+    <link href="https://zjd007.github.io/2022/032154387.html"/>
+    <id>https://zjd007.github.io/2022/032154387.html</id>
+    <published>2022-03-21T13:55:13.000Z</published>
+    <updated>2022-03-23T11:45:31.524Z</updated>
+    
+    
+    <summary type="html">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;amp;id=1413863166&amp;amp;auto=1&amp;amp;height=66&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;基于yolov5的计算机视觉（检测街道）&quot;&gt;&lt;a href=&quot;#基于yolov5的计算机视觉（检测街道）&quot; class=&quot;headerlink&quot; title=&quot;基于yolov5的计算机视觉（检测街道）&quot;&gt;&lt;/a&gt;基于yolov5的计算机视觉（检测街道）&lt;/h1&gt;&lt;h2 id=&quot;一、yolo介绍&quot;&gt;&lt;a href=&quot;#一、yolo介绍&quot; class=&quot;headerlink&quot; title=&quot;一、yolo介绍&quot;&gt;&lt;/a&gt;一、yolo介绍&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;YOLO是目标检测模型。&lt;/p&gt;
+&lt;p&gt;目标检测是计算机视觉中比较简单的任务，用来在一张图篇中找到某些特定的物体，目标检测不仅要求我们识别这些物体的种类，同时要求我们标出这些物体的位置。&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;考虑到github访问速度较慢，我给出了gitee的下载链接：&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+    <category term="计算机视觉" scheme="https://zjd007.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+    
+  </entry>
+  
+</feed>
