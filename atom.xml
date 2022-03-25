@@ -6,7 +6,7 @@
   <link href="https://zjd007.github.io/atom.xml" rel="self"/>
   
   <link href="https://zjd007.github.io/"/>
-  <updated>2022-03-23T06:20:53.754Z</updated>
+  <updated>2022-03-25T14:06:42.260Z</updated>
   <id>https://zjd007.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于hexo的博客搭建总结</title>
+    <link href="https://zjd007.github.io/2022/03259064.html"/>
+    <id>https://zjd007.github.io/2022/03259064.html</id>
+    <published>2022-03-25T10:06:37.000Z</published>
+    <updated>2022-03-25T14:06:42.260Z</updated>
+    
+    
+    <summary type="html">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;amp;id=1417082727&amp;amp;auto=1&amp;amp;height=66&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;（船新版本）基于Hexo的matery主题搭建博客并深度优化&quot;&gt;&lt;a href=&quot;#（船新版本）基于Hexo的matery主题搭建博客并深度优化&quot; class=&quot;headerlink&quot; title=&quot;（船新版本）基于Hexo的matery主题搭建博客并深度优化&quot;&gt;&lt;/a&gt;&lt;strong&gt;（船新版本）基于Hexo的matery主题搭建博客并深度优化&lt;/strong&gt;&lt;/h1&gt;&lt;h2 id=&quot;一、简介&quot;&gt;&lt;a href=&quot;#一、简介&quot; class=&quot;headerlink&quot; title=&quot;一、简介&quot;&gt;&lt;/a&gt;一、简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot;&gt;&lt;strong&gt;hexo&lt;/strong&gt;&lt;/a&gt;是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;二、环境配置及部署到github的教程（B站）&quot;&gt;&lt;a href=&quot;#二、环境配置及部署到github的教程（B站）&quot; class=&quot;headerlink&quot; title=&quot;二、环境配置及部署到github的教程（B站）&quot;&gt;&lt;/a&gt;二、环境配置及部署到github的教程（B站）&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1pt411K7o9?p=2&amp;amp;spm_id_from=333.1007.top_right_bar_window_history.content.click&quot;&gt;&lt;em&gt;★★★传送门1&lt;/em&gt; &lt;/a&gt;：此教程只需看前面3P，讲的很好，但他使用的是yilla主题。&lt;br&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1je41147Ma?spm_id_from=333.1007.top_right_bar_window_history.content.click&quot;&gt;&lt;em&gt;★★★传送门2&lt;/em&gt; &lt;/a&gt;：如果前面环境安装出问题可以看此教程P2，此教程使用的matery主题即为本博客使用的主题。&lt;br&gt;——看完以上两个教程，恭喜你已经建站成功了，并下载了&lt;a href=&quot;https://github.com/blinkfox/hexo-theme-matery&quot;&gt;&lt;strong&gt;matery主题&lt;/strong&gt;&lt;/a&gt;(下载方式为：在博客文件目录下鼠标右击后点击“git bash here”，并输入以下指令)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/blinkfox/hexo-theme-matery.git
+&lt;/code&gt;&lt;/pre&gt;</summary>
+    
+    
+    
+    
+    <category term="前端" scheme="https://zjd007.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -42,7 +65,7 @@
     <link href="https://zjd007.github.io/2022/032154387.html"/>
     <id>https://zjd007.github.io/2022/032154387.html</id>
     <published>2022-03-21T13:55:13.000Z</published>
-    <updated>2022-03-25T09:56:32.760Z</updated>
+    <updated>2022-03-25T13:56:48.164Z</updated>
     
     
     <summary type="html">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;amp;id=1413863166&amp;amp;auto=1&amp;amp;height=66&quot;&gt;&lt;/iframe&gt;
