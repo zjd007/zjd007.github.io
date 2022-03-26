@@ -4,8 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="friends, C++,Linux,nlp,机器学习,深度学习">
-    <meta name="description" content="本网站由个人建立，记录个人研究生阶段学习成果，如有恶意转载，必究责到底">
+    <meta name="keywords" content="C盘清理保姆级教程, C++,Linux,nlp,机器学习,深度学习">
+    <meta name="description" content="
+
+C盘满了..C盘又满了…
+怎么C盘又满了！？
+这是我们很多时候都会困扰到的问题
+当然，重装系统是最简单快捷的，但方不方便就得因人而异了
+有些人每重装一次系统，其中的数据备份和恢复都得头疼好几天
+所以我们通常只好，能不重装就不重装的将就着">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +24,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>friends | 咕咕达Blog</title>
+    <title>C盘清理保姆级教程 | 咕咕达Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -415,350 +422,469 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                这是最好的时代，这是最坏的时代，我们一无所有，我们巍然矗立
-                
-            </div>
+    
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "侯非侯，王非王，千乘万骑走北芒。",
-                            
-                                "吾持剑锋，以筑长城",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/24.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">C盘清理保姆级教程</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
 
 
-    </div>
-</div>
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
-    .friends-container {
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
         margin-top: -100px;
-        margin-bottom: 30px;
+        visibility: hidden;
     }
 
-    .friends-container .tag-title {
-        margin-bottom: 10px;
-        color: #3C4858;
-        font-size: 1.75rem;
-        font-weight: 400;
+    #articleContent :focus {
+        outline: none;
     }
 
-    .frind-ship img {
-        border-radius: 50%;
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
     }
 
-    /* 一下是按钮样式 */
-
-    .frind-ship {
-        padding: 10px 20px;
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
     }
 
-    .frind-ship .title {
-        display: flex;
-        align-items: center;
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
     }
 
-    .frind-ship .title div {
-        color: #fff;
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
         padding-left: 10px;
     }
 
-    .frind-ship .title img {
-        width: 100px;
-        height: 100px;
-        flex-shrink: 0;
+    #toc-content ol li {
+        padding-left: 10px;
     }
 
-    .frind-ship .title h1 {
-        padding-bottom: 5px;
-        border-bottom: 2px solid #fff;
-        position: relative;
-        top:-15px;
-        left: 3px;
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
     }
 
-    .friend-button {
-        display: flex;
-        justify-content: center;
-        margin-bottom: -27px;
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
     }
 
-    .friend-button a {
-        border-radius: 40px;
+    #toc-content .is-active-link {
+        color: #42b983;
     }
 
-    .friend-all .tag-post {
-        margin-bottom: 30px;
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
     }
 
-    .button-caution {
-        background-color: #FF4351;
-        border-color: #FF4351;
-        color: #FFF;
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
     }
 
-    .button {
-        font-weight: 300;
-        font-size: 16px;
-        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        text-decoration: none;
-        text-align: center;
-        line-height: 40px;
-        height: 40px;
-        padding: 0 40px;
-        margin: 0;
-        display: inline-block;
-        appearance: none;
-        cursor: pointer;
-        border: none;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-transition-property: all;
-        transition-property: all;
-        -webkit-transition-duration: .3s;
-        transition-duration: .3s;
-    }
-
-    .title {
-        margin-bottom: 0rem !important;
-    }
-
-    .card {
-        margin: 3rem 0 1rem 0 !important;
-    }
-
-    .button-glow.button-caution {
-        -webkit-animation-name: glowing-caution;
-        animation-name: glowing-caution;
-    }
-
-    @-webkit-keyframes glowing-caution {
-        from {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-
-        50% {
-            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-        }
-
-        to {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-    }
-
-    @keyframes glowing-caution {
-        from {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-
-        50% {
-            -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
-        }
-
-        to {
-            -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
-        }
-    }
-
-    .button-caution:hover {
-        background-color: #ff7680;
-        border-color: #ff7680;
-        color: #FFF;
-        text-decoration: none;
-    }
-
-    .frind-card1 {
-        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    }
-
-    .frind-card2 {
-        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-
-    .frind-card3 {
-        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
-    }
-
-    .frind-card4 {
-        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-    }
-
-    .frind-card5 {
-        background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
-    }
-
-    .frind-card6 {
-        background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
-    }
-
-    .frind-card7 {
-        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-    }
-
-    .frind-card8 {
-        background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
-    }
-
-    .frind-card9 {
-        background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
-    }
-
-    .frind-card10 {
-        background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    }
-
-    article .card {
-        overflow: visible !important;
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
     }
 </style>
-
-<main class="content">
-    <div class="container friends-container">
-        <div class="card">
-            <div class="card-content">
-                <div class="tag-title center-align">
-                    <i class="fas fa-address-book"></i>&nbsp;&nbsp;友情链接
-                </div>
-                <article id="friends-link">
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
                     
-                    
-                    <div class="row tags-posts friend-all">
+                    <div class="article-tag">
                         
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card1">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="https://cdn.jsdelivr.net/gh/guixinchn/image/blog/csdn.png" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">Blog</h1>
-                                            <p style="position: relative;top: -35px;">CSDN社区</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://blog.csdn.net/guixinchn" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            CSDN
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card2">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="https://cdn.jsdelivr.net/gh/guixinchn/image/blog/bokeyuan.png" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">Blog</h1>
-                                            <p style="position: relative;top: -35px;">博客园</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.cnblogs.com/guixinchn/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            博客园
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card3">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="https://cdn.jsdelivr.net/gh/guixinchn/image/blog/github.png" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">github</h1>
-                                            <p style="position: relative;top: -35px;">github</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://github.com/guixinchn" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            github
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card4">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="https://cdn.jsdelivr.net/gh/guixinchn/image/blog/touxiang.jpg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">Blog</h1>
-                                            <p style="position: relative;top: -35px;">咕咕星</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://ythan.top" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            咕咕星
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <a href="/tags/%E5%B8%B8%E8%AF%86/">
+                                <span class="chip bg-color">常识</span>
+                            </a>
                         
                     </div>
                     
-                </article>
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-03-26
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-03-26
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    5 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
+        <hr class="clearfix">
 
         
 
-        <div class="card">
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=1817410059&amp;auto=0&amp;height=66"></iframe>
+
+<h1 id="C盘满了"><a href="#C盘满了" class="headerlink" title="C盘满了.."></a>C盘满了..</h1><p>C盘又满了…</p>
+<p>怎么C盘又满了！？</p>
+<p>这是我们很多时候都会困扰到的问题</p>
+<p>当然，重装系统是最简单快捷的，但方不方便就得因人而异了</p>
+<p>有些人每重装一次系统，其中的数据备份和恢复都得头疼好几天</p>
+<p>所以我们通常只好，能不重装就不重装的将就着</p>
+<p>所以我就打算写一个“全网最全的 C 盘清理攻略”，作为重装系统的补充办法</p>
+<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>为什么 C 盘莫名其妙就满了？</p>
+<p>首先，我们一定不要将任何软件安装在C盘，这会占用很大一部分空间</p>
+<p>其次就是很多软件下载的默认位置就在C盘，所以需要你手动移动它们，或自定义每一个软件的默认下载位置</p>
+<p>然后就是你的电脑上各个程序软件的运行缓存了，这是可以通过清理软件进行清理的</p>
+<p>最后是windows的更新缓存文件和补丁等等，这是很多人C盘莫名其妙爆红的最大“原罪”，它们通常会占用C盘几个G甚至十几个G的空间</p>
+<p>既然我们现在搞清楚了C盘容易爆红的原因，那下面我们就一个一个来解决它们！<br><img src="https://pic1.zhimg.com/80/v2-6d8662aea79e26a739b5468378e5ec18_720w.jpg"></p>
+<hr>
+<h2 id="方法1–磁盘清理"><a href="#方法1–磁盘清理" class="headerlink" title="方法1–磁盘清理"></a>方法1–磁盘清理</h2><p><img src="https://pic2.zhimg.com/80/v2-5180216d1ae513a577e9666d60329a2d_720w.jpg"><br><img src="https://pic4.zhimg.com/80/v2-4f44feefbe1fc853b273fb99a956902b_720w.jpg"><br><img src="https://pic2.zhimg.com/80/v2-ee9f2a69d551fef77af748a7a3f03b69_720w.jpg"><br><img src="https://pic1.zhimg.com/80/v2-710f09b0f29f12a3d0ecd13c8cda0354_720w.jpg"><br><img src="https://pic4.zhimg.com/80/v2-7641b40e7991ad30cfe363e92f94ce23_720w.jpg"></p>
+<hr>
+<h2 id="方法2–磁盘清理-清理系统文件"><a href="#方法2–磁盘清理-清理系统文件" class="headerlink" title="方法2–磁盘清理-清理系统文件"></a>方法2–磁盘清理-清理系统文件</h2><p>这次我们打开 <strong>C盘—属性—磁盘清理</strong> 后，找到左下方的<strong>清理系统文件</strong><br><img src="https://pic3.zhimg.com/80/v2-211a0532df015e230cdd9427aa0b1bea_720w.jpg"><br><img src="https://pic4.zhimg.com/80/v2-5279430cd0f6a77c31b43e5fe2d4604f_720w.jpg"><br>这就是强大的“原罪”——windows系统更新/补丁缓存文件</p>
+<p>我这里之前还是清理过的，如果你的windows系统更新/补丁缓存文件从来没有清理过，那可能会有超10G的可清理文件</p>
+<p>这里我们不需再手动勾选其他选项，默认的勾选就足以，接着我们点击确定进行清理</p>
+<p>这个清理过程可能会比较缓慢，我们不要着急，耐心等待它的完成</p>
+<hr>
+<h2 id="方法3–设置"><a href="#方法3–设置" class="headerlink" title="方法3–设置"></a>方法3–设置</h2><p>我们在开始菜单栏找到设置打开<br><img src="https://pic2.zhimg.com/80/v2-5749fdb650b3549ee81d95937874faed_720w.jpg"><br>设置-系统-存储<br>在这里我们可以看到C盘的数据详情，你可以知道你的C盘究竟是哪些数据占比最大</p>
+<p>接着我们依次清理它们<br><img src="https://pic2.zhimg.com/80/v2-501466f31a2295da4474ee54f49840d9_720w.jpg"><br><img src="https://pic4.zhimg.com/80/v2-2d2c4cd3df8af4098c4ab2bd68598e5f_720w.jpg"></p>
+<hr>
+<h2 id="方法4–虚拟内存"><a href="#方法4–虚拟内存" class="headerlink" title="方法4–虚拟内存"></a>方法4–虚拟内存</h2><p>如果你的虚拟内存高达几个G，可能就需要稍微设置一下了</p>
+<p>虚拟内存可以在你电脑物理内存（ 内存条 ）不够用时，把一部分的硬盘空间作为内存来使用，从而让电脑可以运行更多的应用程序</p>
+<p>所以如果你的内存不大，那可能虚拟内存就会占用很大一部分空间</p>
+<p>这里我们完全可以将虚拟内存设置在C盘以外的其他盘，给减轻C盘空间的负担<br>首先我们右键桌面的此电脑，打开属性<br><img src="https://pic1.zhimg.com/80/v2-6425a92fef37813b151d779df6513290_720w.jpg"><br><img src="https://pic4.zhimg.com/80/v2-89eae7b5c677d31c2865e677f6b4845f_720w.jpg"><br><img src="https://pic4.zhimg.com/80/v2-931c4dd03f67df523620d37e58102e17_720w.jpg"><br>在性能选项的界面我们找到顶部菜单高级，最后点击更改，即可打开虚拟内存设置<br><img src="https://pic3.zhimg.com/80/v2-7083885b77a66ebdf63324ff789ca88e_720w.jpg"><br><img src="https://pic1.zhimg.com/80/v2-e2031de9f8516b2f6a8b537aca8d419c_720w.jpg"><br>先取消勾选自动管理所有驱动器的分页文件大小</p>
+<p>接着勾选任意一个除C盘以外的磁盘</p>
+<p>然后点击自定义打下，下方有系统推荐的数值</p>
+<p>最后点击设置，然后确定即可</p>
+<p>这样你就成功将可能高达几个G大小的虚拟内存转移到其他盘啦!   </p>
+<hr>
+<h2 id="方法5–系统缓存文件"><a href="#方法5–系统缓存文件" class="headerlink" title="方法5–系统缓存文件"></a>方法5–系统缓存文件</h2><p>C盘的文件最大来源除了应用缓存，就是系统更新/补丁时候的缓存文件了</p>
+<p>虽然我们上面进行了一系列的清理，但下面这个文件夹，还可以进行清理</p>
+<p>C:\Windows\SoftwareDistribution\Download<br><img src="https://pic3.zhimg.com/80/v2-8fbc9fe68d7364920c12b40012f715ce_720w.jpg"><br>竟然还有半个G大小的缓存文件，我们毫不犹豫的删除它！   </p>
+<hr>
+<h2 id="方法6–浏览器清理"><a href="#方法6–浏览器清理" class="headerlink" title="方法6–浏览器清理"></a>方法6–浏览器清理</h2><p>浏览器缓存我们也需要进行一个清理</p>
+<p>这里我们打开控制面板，可以右键桌面此电脑属性，在左侧栏点击控制面板主页打开<br><img src="https://pic4.zhimg.com/80/v2-82181242a2b91239429ca8c9bb21f71b_720w.jpg"><br>接着找到Internet 选项打开<br><img src="https://pic2.zhimg.com/80/v2-f27dec22beaf1db4834eb44e4ca7ed2d_720w.jpg"><br>在弹出的窗口找到高级，并勾选关闭浏览器时清空Internet 临时文件即可<br><img src="https://pic3.zhimg.com/80/v2-3fe78b7dcaa68715aa6aac79098f2a32_720w.jpg"></p>
+<hr>
+<h2 id="方法7–关闭休眠功能"><a href="#方法7–关闭休眠功能" class="headerlink" title="方法7–关闭休眠功能"></a>方法7–关闭休眠功能</h2><p>windows有一个休眠功能，它会在电脑进入休眠时进行一个文件保存</p>
+<p>但这些保存的文件会一直留在磁盘里，不会被主动删除，成为了一个C盘的清理死角</p>
+<p>这时候我们就该将它给删除并关闭了</p>
+<p>这里我们直接win+R打开运行框，输入cmd<br><img src="https://pic1.zhimg.com/80/v2-73e1436ab041854c87f20fe83ca1cc6c_720w.jpg"><br>在跳出的大黑板上输入powercfg -h off,然后回车即可<br><img src="https://pic3.zhimg.com/80/v2-eae1b6f80ef771179c300c5433aa8686_720w.jpg"> </p>
+<hr>
+<h2 id="方法8–修改默认下载位置"><a href="#方法8–修改默认下载位置" class="headerlink" title="方法8–修改默认下载位置"></a>方法8–修改默认下载位置</h2><p>这里如果你的存储感知是开着的，请关闭<br><img src="https://pic2.zhimg.com/80/v2-dfa5fa9bb1c2a1c899b43e951d177b3d_720w.jpg"><br>接着我们打开更改新内容的保存位置</p>
+<p>可以将它们统统修改至其他盘，从而减少C盘的负担<br><img src="https://pic4.zhimg.com/80/v2-e3e90802832d7dae5e86b56047394617_720w.jpg"></p>
+<hr>
+<h2 id="方法9–临时文件"><a href="#方法9–临时文件" class="headerlink" title="方法9–临时文件"></a>方法9–临时文件</h2><p>我们继续设置中的清理，按顺序找到 <strong>临时文件</strong> 打开<br><img src="https://pic4.zhimg.com/80/v2-eec4887ead256b05a42249ed7fefa167_720w.jpg"><br>这里其实经过我们上一步的磁盘清理，缓存垃圾已经所剩无几，但还是可以清理掉某些漏网之鱼   </p>
+<hr>
+<h2 id="方法10–系统和保留空间（迫不得已再清）"><a href="#方法10–系统和保留空间（迫不得已再清）" class="headerlink" title="方法10–系统和保留空间（迫不得已再清）"></a>方法10–系统和保留空间（迫不得已再清）</h2><p>如果你的C盘空间还很足，不建议使用本方法，可以考虑保留系统还原功能和它的文件，因为关键的时刻可以利用系统还原来找回你的重要数据<br>先按顺序找到<strong>系统和保留空间</strong>打开<br><img src="https://pic2.zhimg.com/80/v2-85c834b11bea6c2765c4824dab7ddffd_720w.jpg"><br>这里可以清楚的看到你的系统文件占用了C盘多少的空间</p>
+<p>而下方的虚拟内存和系统还原都是可以清理的</p>
+<p>我们点开管理系统还原，接着打开配置<br><img src="https://pic3.zhimg.com/80/v2-107e5b76f5dcaa3890618525d3ff70fe_720w.jpg"><br>这里我们同样也可以在桌面此电脑处右键属性，打开系统保护找到他<br><img src="https://pic4.zhimg.com/80/v2-906be568b56172c6a612086f9e97655b_720w.jpg"><br>在这里我们可以直接点击<strong>禁用系统保护</strong>，关闭系统还原功能<br><img src="https://pic4.zhimg.com/80/v2-bd757b6db8ec0d250b70e3727d1b9d03_720w.jpg"></p>
+<hr>
+<p>end~~~</p>
+
+                
+            </div>
+            <hr/>
 
             
-            <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Junda</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://zjd007.github.io/2022/032641027.html">https://zjd007.github.io/2022/032641027.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Junda</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E5%B8%B8%E8%AF%86/">
+                                    <span class="chip bg-color">常识</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
 <link rel="stylesheet" href="/css/my-gitalk.css">
 
 <div class="card gitalk-card" data-aos="fade-up">
@@ -777,23 +903,23 @@
         repo: 'BlogTalk',
         owner: 'zjd007',
         admin: "zjd007",
-        id: '2022-03-22T21-43-07',
+        id: '2022-03-26T17-29-53',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
     gitalk.render('gitalk-container');
 </script>
 
-            
+    
 
-            
+    
 
-            
+    
 
-            
+    
 
-            
-            <style>
+    
+        <style>
     .valine-card {
         margin: 1.5rem auto;
     }
@@ -1059,23 +1185,222 @@ new Valine({
 <!--酷Q推送-->
 
 
-            
+    
 
-            
+    
 
-            
+    
 
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/032641027.html">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="C盘清理保姆级教程">
+                        
+                        <span class="card-title">C盘清理保姆级教程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Junda
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%B8%B8%E8%AF%86/">
+                        <span class="chip bg-color">常识</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03269708.html">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/machine.jpg" class="responsive-img" alt="机器学习入坑指南">
+                        
+                        <span class="card-title">机器学习入坑指南</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+
+机器学习小白入坑指南一、引言先来看看百度NLP研发实习生的招聘要求：   
+
+【实习】【百度·NLP】研发实习生 (base: 北京）职责:利用NLP技术系统化解决实际问题，推动算法策略应用落地，为公司核心业务提供有力的技术支撑。要求:
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Junda
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">机器学习</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
         </div>
     </div>
-</main>
+</div>
 
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
-        $('#friends-link').masonry({
-            itemSelector: '.friend-div'
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
         });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
     });
 </script>
+
+    
+
+</main>
+
+
 
 
     <footer class="page-footer bg-color">
