@@ -4,15 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="First blog of zjd(2022.3.21), C++,Linux,nlp,机器学习,深度学习">
+    <meta name="keywords" content="机器学习入坑指南, C++,Linux,nlp,机器学习,深度学习">
     <meta name="description" content="
 
-基于yolov5的计算机视觉（检测街道）一、yolo介绍
-YOLO是目标检测模型。
-目标检测是计算机视觉中比较简单的任务，用来在一张图篇中找到某些特定的物体，目标检测不仅要求我们识别这些物体的种类，同时要求我们标出这些物体的位置。
+机器学习小白入坑指南一、引言先来看看百度NLP研发实习生的招聘要求：   
 
-
-">
+【实习】【百度·NLP】研发实习生 (base: 北京）职责:利用NLP技术系统化解决实际问题，推动算法策略应用落地，为公司核心业务提供有力的技术支撑。要求:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +21,7 @@ YOLO是目标检测模型。
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>First blog of zjd(2022.3.21) | 咕咕达Blog</title>
+    <title>机器学习入坑指南 | 咕咕达Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -426,12 +423,12 @@ YOLO是目标检测模型。
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/machine.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">First blog of zjd(2022.3.21)</h1>
+                    <h1 class="description center-align post-title">机器学习入坑指南</h1>
                 </div>
             </div>
         </div>
@@ -547,8 +544,8 @@ YOLO是目标检测模型。
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">
-                                <span class="chip bg-color">计算机视觉</span>
+                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">机器学习</span>
                             </a>
                         
                     </div>
@@ -563,7 +560,7 @@ YOLO是目标检测模型。
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-21
+                    2022-03-26
                 </div>
                 
 
@@ -577,14 +574,14 @@ YOLO是目标检测模型。
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    554
+                    2.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    10 分
                 </div>
                 
 
@@ -609,61 +606,121 @@ YOLO是目标检测模型。
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=1413863166&amp;auto=1&amp;height=66"></iframe>
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=1844117168&amp;auto=0&amp;height=66"></iframe>
 
-<h1 id="基于yolov5的计算机视觉（检测街道）"><a href="#基于yolov5的计算机视觉（检测街道）" class="headerlink" title="基于yolov5的计算机视觉（检测街道）"></a>基于yolov5的计算机视觉（检测街道）</h1><h2 id="一、yolo介绍"><a href="#一、yolo介绍" class="headerlink" title="一、yolo介绍"></a>一、yolo介绍</h2><hr>
-<p>YOLO是目标检测模型。</p>
-<p>目标检测是计算机视觉中比较简单的任务，用来在一张图篇中找到某些特定的物体，目标检测不仅要求我们识别这些物体的种类，同时要求我们标出这些物体的位置。</p>
-<hr>
+<h1 id="机器学习小白入坑指南"><a href="#机器学习小白入坑指南" class="headerlink" title="机器学习小白入坑指南"></a>机器学习小白入坑指南</h1><h2 id="一、引言"><a href="#一、引言" class="headerlink" title="一、引言"></a>一、引言</h2><p>先来看看百度NLP研发实习生的招聘要求：   </p>
 <blockquote>
-<p>考虑到github访问速度较慢，我给出了gitee的下载链接：</p>
+<p>【实习】【百度·NLP】研发实习生 (base: 北京）<br>职责:利用NLP技术系统化解决实际问题，推动算法策略应用落地，为公司核心业务提供有力的技术支撑。<br>要求:</p>
+<ol>
+<li>具备扎实的深度学习算法基础、工程开发基础；</li>
+<li>熟悉Linux开发环境，对人工智能有浓厚兴趣，熟练掌握python，熟悉C++更佳；</li>
+<li>熟练掌握tensorflow/pytorch深度学习框架，熟练掌握飞桨框架优先，对框架底层原理有了解者更佳；</li>
+<li>熟悉ERNIE, BERT等预训练模型；熟悉分类、匹配、序列标注、文本生成等常见NLP任务范式；</li>
+<li>在ICML/NIPS/IJCAl/AAAl/ICLR等国际顶级会议上发表过学术论文者优先；</li>
+<li>研究生在校生，实习时间不低于6个月，每周不少于4天。</li>
+</ol>
 </blockquote>
+<hr>
+<p>—我不禁感慨，这也太卷了吧，连个实习生要求都这么高。诚然，算法岗处于整个互联网食物链的最顶层，高标准的要求下是极高的薪资（普通年薪40-80W），上不封顶！！！<br>—接下来，就让我们一起，揭开这个岗位的神秘面纱。</p>
 <span id="more"></span>
-
-<p><a target="_blank" rel="noopener" href="https://gitee.com/monkeycc/yolov5?_from=gitee_search">yolov5下载链接</a></p>
-<p><img src="https://pic2.zhimg.com/v2-c28dc6c85854680a7fdfa84035ba6fe5_1440w.jpg?source=172ae18b" alt="检测"></p>
-<h2 id="二、yolo的历代版本"><a href="#二、yolo的历代版本" class="headerlink" title="二、yolo的历代版本"></a>二、yolo的历代版本</h2><ul>
-<li>v1.0-v2.0  </li>
-<li>v3.0-v4.0  </li>
-<li>v5.0-v6.0-v6.1</li>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F7968702265%2F1000.jpg&amp;refer=http%3A%2F%2Finews.gtimg.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1650875933&amp;t=a69b6a064189f2aca50621e26450d075"></p>
+<hr>
+<p>—也许你和这个叫<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/217599?fr=aladdin">『机器学习』</a>的家伙一点也不熟，但是你举起iphone手机拍照的时候，早已习惯它帮你框出人脸；也自然而然点开今日头条推给你的新闻；也习惯逛淘宝点了找相似之后货比三家；亦或喜闻乐见微软的年龄识别网站结果刷爆朋友圈。恩，这些功能的核心算法就是机器学习领域的内容。</p>
+<p>—套用一下大神们对机器学习的定义， <strong>机器学习研究的是计算机怎样模拟人类的学习行为，以获取新的知识或技能，并重新组织已有的知识结构使之不断改善自身。</strong> 简单一点说，就是计算机从数据中学习出规律和模式，以应用在新数据上做预测的任务。近年来互联网数据大爆炸，数据的丰富度和覆盖面远远超出人工可以观察和总结的范畴，而机器学习的算法能指引计算机在海量数据中，挖掘出有用的价值，也使得无数学习者为之着迷。</p>
+<p>—但是越说越觉得机器学习有距离感，云里雾里高深莫测，我们不是专家，但说起算有一些从业经验，做过一些项目在实际数据上应用机器学习。这一篇就我们的经验和各位同仁的分享，总结一些对于初学者入门有帮助的方法和对进阶有用的资料。<br><img src="https://img-blog.csdn.net/20180605162548956?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvaGFpeng=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
+<hr>
+<h1 id="二-机器学习关注问题"><a href="#二-机器学习关注问题" class="headerlink" title="二. 机器学习关注问题"></a>二. 机器学习关注问题</h1><p>—并非所有的问题都适合用机器学习解决(很多逻辑清晰的问题用规则能很高效和准确地处理)，也没有一个机器学习算法可以通用于所有问题。咱们先来了解了解，机器学习，到底关心和解决什么样的问题。</p>
+<p>从功能的角度分类，机器学习在一定量级的数据上，可以解决下列问题：</p>
+<p>1.分类问题</p>
+<p>根据数据样本上抽取出的特征，判定其属于有限个类别中的哪一个。比如：<br>垃圾邮件识别(结果类别：1、垃圾邮件 2、正常邮件)<br>文本情感褒贬分析(结果类别：1、褒 2、贬)<br>图像内容识别识别(结果类别：1、喵星人 2、汪星人 3、人类 4、草泥马 5、都不是)。<br>2.回归问题</p>
+<p>根据数据样本上抽取出的特征，预测一个连续值的结果。比如：<br>星爷《美人鱼》票房<br>大帝都2个月后的房价<br>隔壁熊孩子一天来你家几次，宠幸你多少玩具<br>3.聚类问题</p>
+<p>根据数据样本上抽取出的特征，让样本抱抱团(相近/相关的样本在一团内)。比如：<br>google的新闻分类<br>用户群体划分<br>我们再把上述常见问题划到机器学习最典型的2个分类上。</p>
+<p>分类与回归问题需要用已知结果的数据做训练，属于<strong>“监督学习”</strong><br>聚类的问题不需要已知标签，属于<strong>“非监督学习”</strong>。<br>如果在IT行业(尤其是互联网)里溜达一圈，你会发现机器学习在以下热点问题中有广泛应用：</p>
+<ul>
+<li>1.计算机视觉</li>
+</ul>
+<p>典型的应用包括：人脸识别、车牌识别、扫描文字识别、图片内容识别、图片搜索等等。   </p>
+<ul>
+<li>2.自然语言处理</li>
+</ul>
+<p>典型的应用包括：搜索引擎智能匹配、文本内容理解、文本情绪判断，语音识别、输入法、机器翻译等等。</p>
+<ul>
+<li>3.社会网络分析</li>
+</ul>
+<p>典型的应用包括：用户画像、网络关联分析、欺诈作弊发现、热点发现等等。</p>
+<ul>
+<li>4.推荐</li>
+</ul>
+<p>典型的应用包括：虾米音乐的“歌曲推荐”，某宝的“猜你喜欢”等等。<br><img src="https://img-blog.csdn.net/20180605171615667?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvaGFpeng=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
+<hr>
+<h2 id="三、典型算法"><a href="#三、典型算法" class="headerlink" title="三、典型算法"></a>三、典型算法</h2><p>绝大多数问题用典型机器学习的算法都能解决，粗略地列举一下这些方法如下：</p>
+<blockquote>
+<p>处理分类问题的常用算法包括：<strong>逻辑回归(工业界最常用)，支持向量机，随机森林，朴素贝叶斯(NLP中常用)，深度神经网络(视频、图片、语音等多媒体数据中使用)。</strong>  </p>
+</blockquote>
+<blockquote>
+<p>处理回归问题的常用算法包括：<strong>线性回归</strong>，普通最小二乘回归（Ordinary Least Squares Regression），逐步回归（Stepwise Regression），多元自适应回归样条（Multivariate Adaptive Regression Splines）   </p>
+</blockquote>
+<blockquote>
+<p>处理聚类问题的常用算法包括：<strong>K均值（K-means）</strong>，基于密度聚类，LDA等等。<br>降维的常用算法包括：<strong>主成分分析（PCA）,奇异值分解（SVD）</strong> 等。   </p>
+</blockquote>
+<blockquote>
+<p>推荐系统的常用算法：<strong>协同过滤算法</strong>  </p>
+</blockquote>
+<blockquote>
+<p>模型融合(model ensemble)和提升(boosting)的算法包括：bagging，adaboost，GBDT，GBRT   </p>
+</blockquote>
+<blockquote>
+<p>其他很重要的算法包括：EM算法等等。</p>
+</blockquote>
+<p>我们多插一句，机器学习里所说的 <strong>“算法”</strong> 与程序员所说的“数据结构与算法分析”里的“算法”<strong>略有区别。前者更关注结果数据的召回率、精确度、准确性等方面，后者更关注执行过程的时间复杂度、空间复杂度等方面。 。</strong> 当然，实际机器学习问题中，对效率和资源占用的考量是不可或缺的。</p>
+<hr>
+<h2 id="四、python"><a href="#四、python" class="headerlink" title="四、python"></a>四、python</h2><p>python有着全品类的数据科学工具，从数据获取、数据清洗到整合各种算法都做得非常全面。</p>
+<ul>
+<li>网页爬虫: <a target="_blank" rel="noopener" href="https://scrapy.org/">scrapy</a></li>
+<li>数据挖掘:<ul>
+<li><a target="_blank" rel="noopener" href="https://pandas.pydata.org/">pandas</a>：模拟R，进行数据浏览与预处理。</li>
+<li><a target="_blank" rel="noopener" href="https://numpy.org/">numpy</a>：数组运算。</li>
+<li><a target="_blank" rel="noopener" href="https://scipy.org/">scipy</a>：高效的科学计算。</li>
+<li><a target="_blank" rel="noopener" href="https://matplotlib.org/">matplotlib</a>：非常方便的数据可视化工具。</li>
+</ul>
+</li>
+<li>机器学习:<ul>
+<li><a target="_blank" rel="noopener" href="http://scikit-learn.org/stable/">scikit-learn</a>：远近闻名的机器学习package。未必是最高效的，但是接口真心封装得好，几乎所有的机器学习算法输入输出部分格式都一致。而它的支持文档甚至可以直接当做教程来学习，非常用心。对于不是非常高纬度、高量级的数据，scikit-learn胜任得非常好(有兴趣可以看看sklearn的源码，也很有意思)。</li>
+<li><a target="_blank" rel="noopener" href="https://www.csie.ntu.edu.tw/~cjlin/libsvm/">libsvm</a>：高效率的svm模型实现(了解一下很有好处，libsvm的系数数据输入格式，在各处都非常常见)</li>
+<li>keras/T<a target="_blank" rel="noopener" href="http://www.tensorflow.org/">ensorFlow</a>：对深度学习感兴趣的同学，也能很方便地搭建自己的神经网络了。</li>
+</ul>
+</li>
+<li>自然语言处理:<ul>
+<li><a target="_blank" rel="noopener" href="http://www.nltk.org/">nltk</a>：自然语言处理的相关功能做得非常全面，有典型语料库，而且上手也非常容易。</li>
+</ul>
+</li>
+<li>交互式环境：<ul>
+<li><a target="_blank" rel="noopener" href="http://ipython.org/notebook.html">ipython notebook</a>：能直接打通数据到结果的通道，方便至极。强力推荐。<br><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FpojyAtdhQhPbnGFv8X58lTnQD1u9picicibLjmIcwN3sAJOI7icpG57eQdAFUoRH5T3ibFvtGmGicghABdUOicpkpRl1w%2F640%3Fwx_fmt%3Djpeg&amp;refer=http%3A%2F%2Fmmbiz.qpic.cn&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1650876014&amp;t=4ad72e75f526d7879125b3571e2f97c8"></li>
 </ul>
 <hr>
-<h2 id="三、train-py文件部分代码"><a href="#三、train-py文件部分代码" class="headerlink" title="三、train.py文件部分代码"></a>三、train.py文件部分代码</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">parse_opt</span><span class="token punctuation">(</span>known<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    parser <span class="token operator">=</span> argparse<span class="token punctuation">.</span>ArgumentParser<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--weights'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>str<span class="token punctuation">,</span> default<span class="token operator">=</span>ROOT <span class="token operator">/</span> <span class="token string">'yolov5s.pt'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'initial weights path'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--cfg'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>str<span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'model.yaml path'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--data'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>str<span class="token punctuation">,</span> default<span class="token operator">=</span>ROOT <span class="token operator">/</span> <span class="token string">'data/coco128.yaml'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'dataset.yaml path'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--hyp'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>str<span class="token punctuation">,</span> default<span class="token operator">=</span>ROOT <span class="token operator">/</span> <span class="token string">'data/hyps/hyp.scratch.yaml'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'hyperparameters path'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--epochs'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>int<span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token number">300</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--batch-size'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>int<span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'total batch size for all GPUs'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--imgsz'</span><span class="token punctuation">,</span> <span class="token string">'--img'</span><span class="token punctuation">,</span> <span class="token string">'--img-size'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>int<span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token number">640</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'train, val image size (pixels)'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--rect'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'rectangular training'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--resume'</span><span class="token punctuation">,</span> nargs<span class="token operator">=</span><span class="token string">'?'</span><span class="token punctuation">,</span> const<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'resume most recent training'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--nosave'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'only save final checkpoint'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--noval'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'only validate final epoch'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--noautoanchor'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'disable autoanchor check'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--evolve'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>int<span class="token punctuation">,</span> nargs<span class="token operator">=</span><span class="token string">'?'</span><span class="token punctuation">,</span> const<span class="token operator">=</span><span class="token number">300</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'evolve hyperparameters for x generations'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--bucket'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>str<span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'gsutil bucket'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--cache'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>str<span class="token punctuation">,</span> nargs<span class="token operator">=</span><span class="token string">'?'</span><span class="token punctuation">,</span> const<span class="token operator">=</span><span class="token string">'ram'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'--cache images in "ram" (default) or "disk"'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--image-weights'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'use weighted image selection for training'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--device'</span><span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'cuda device, i.e. 0 or 0,1,2,3 or cpu'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--multi-scale'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'vary img-size +/- 50%%'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--single-cls'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'train multi-class data as single-class'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--adam'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'use torch.optim.Adam() optimizer'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--sync-bn'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'use SyncBatchNorm, only available in DDP mode'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--workers'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>int<span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'maximum number of dataloader workers'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--project'</span><span class="token punctuation">,</span> default<span class="token operator">=</span>ROOT <span class="token operator">/</span> <span class="token string">'runs/train'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'save to project/name'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--name'</span><span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token string">'exp'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'save to project/name'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--exist-ok'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'existing project/name ok, do not increment'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--quad'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'quad dataloader'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--linear-lr'</span><span class="token punctuation">,</span> action<span class="token operator">=</span><span class="token string">'store_true'</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'linear LR'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--label-smoothing'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>float<span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token number">0.0</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'Label smoothing epsilon'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--patience'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>int<span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'EarlyStopping patience (epochs without improvement)'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--freeze'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>int<span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'Number of layers to freeze. backbone=10, all=24'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--save-period'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>int<span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'Save checkpoint every x epochs (disabled if &lt; 1)'</span><span class="token punctuation">)</span>
-    parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">'--local_rank'</span><span class="token punctuation">,</span> type<span class="token operator">=</span>int<span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> help<span class="token operator">=</span><span class="token string">'DDP parameter, do not modify'</span><span class="token punctuation">)</span>
-</code></pre>
+<h2 id="五、关于积累项目经验"><a href="#五、关于积累项目经验" class="headerlink" title="五、关于积累项目经验"></a>五、关于积累项目经验</h2><p>初学机器学习可能有一个误区，就是一上来就陷入到对各种高大上算法的追逐当中。动不动就我能不能用深度学习去解决这个问题啊？我是不是要用boosting算法做一些模型融合啊？我一直持有一个观点，<strong>『脱离业务和数据的算法讨论是毫无意义的』</strong> 。</p>
+</li>
+</ul>
+<p>实际上按我们的学习经验，<strong>从一个数据源开始，即使是用最传统，已经应用多年的机器学习算法，先完整地走完机器学习的整个工作流程，不断尝试各种算法深挖这些数据的价值，在运用过程中把数据、特征和算法搞透，真正积累出项目经验</strong> 才是最快、最靠谱的学习路径。</p>
+<p>那如何获取数据和项目呢？一个捷径就是积极参加国内外各种数据挖掘竞赛，数据直接下载下来，按照竞赛的要求去不断优化，积累经验。国外的<a target="_blank" rel="noopener" href="https://www.kaggle.com/">Kaggle</a>和国内的<a target="_blank" rel="noopener" href="http://www.pkbigdata.com/">DataCastle</a> 以及<a target="_blank" rel="noopener" href="https://tianchi.aliyun.com/">阿里天池比赛</a>都是很好的平台，你可以在上面获取真实的数据和数据科学家们一起学习和进行竞赛，尝试使用已经学过的所有知识来完成这个比赛本身也是一件很有乐趣的事情。和其他数据科学家的讨论能开阔视野，对机器学习算法有更深层次的认识。</p>
+<p>有意思的是，有些平台，比如阿里天池比赛，甚至给出了从 <strong>数据处理</strong> 到 <strong>模型训练</strong> 到 <strong>模型评估</strong> 、 <strong>可视化</strong> 到 <strong>模型融合增强</strong> 的全部组件，你要做的事情只是参与比赛，获取数据，然后使用这些组件去实现自己的idea即可。具体内容可以参见<a target="_blank" rel="noopener" href="https://help.aliyun.com/document_detail/shujia/machine-learning/pai-quickstart.html">阿里云机器学习文档</a>。</p>
 <hr>
+<h2 id="六、关于操作系统"><a href="#六、关于操作系统" class="headerlink" title="六、关于操作系统"></a>六、关于操作系统</h2><ul>
+<li>mac和linux会方便一些，而windows在开发中略显力不从心。所谓方便，主要是指的mac和linux在下载安装软件、配置环境更快捷。   </li>
+<li>对于只习惯windows的同学，推荐anaconda，一步到位安装完python的全品类数据科学工具包。</li>
+</ul>
+<hr>
+<h2 id="七、关于书籍学习路线"><a href="#七、关于书籍学习路线" class="headerlink" title="七、关于书籍学习路线"></a>七、关于书籍学习路线</h2><ul>
+<li>《C程序语言设计》-&gt;《★ <strong>C++ Primer</strong> 》-&gt;《effective C++ 系列》-&gt;《C++STL源码剖析》-&gt;《深入理解C++对象模型》</li>
+<li>《大话数据结构》-&gt;《算法图解》-&gt;《数据结构与算法之美》-&gt;《剑指offer》-&gt;《leetcode刷题》（至少把easy和mid刷完，以及<a target="_blank" rel="noopener" href="https://codetop.cc/home">各大厂常考题</a>）</li>
+<li>《操作系统导论》-&gt;《现代操作系统》</li>
+<li>《图解http》-&gt;《图解tcp/ip》-&gt;《网络是怎么连接的》-&gt;《计算机网络自顶向下》《TCP/IP协议详解卷1》</li>
+<li>《程序是怎么跑来的》-&gt;《计算机组成原理：软件/接口与设计》-&gt;《深入理解计算机系统》</li>
+<li>《SQL必知必会》-&gt;《从根儿上理解mysql》-&gt;《mysql技术内幕》-&gt;《高性能mysql》</li>
+<li>《程序员的自我修养》</li>
+</ul>
+<hr>
+<h2 id="八、关于transformer"><a href="#八、关于transformer" class="headerlink" title="八、关于transformer"></a>八、关于transformer</h2><p>——–谷歌的Transformer模型最早是用于机器翻译任务，当时达到了SOTA效果。Transformer改进了RNN最被人诟病的训练慢的缺点，利用self-attention机制实现快速并行。并且Transformer可以增加到非常深的深度，充分发掘DNN模型的特性，提升模型准确率。近几年基于Transformer的模型成为计算机视觉任务的重要研究方向。</p>
 
                 
             </div>
@@ -690,7 +747,7 @@ YOLO是目标检测模型。
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zjd007.github.io/2022/032154387.html">https://zjd007.github.io/2022/032154387.html</a>
+                    <a href="https://zjd007.github.io/2022/03269708.html">https://zjd007.github.io/2022/03269708.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -728,8 +785,8 @@ YOLO是目标检测模型。
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">
-                                    <span class="chip bg-color">计算机视觉</span>
+                                <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">机器学习</span>
                                 </a>
                             
                         </div>
@@ -900,7 +957,7 @@ YOLO是目标检测模型。
         repo: 'BlogTalk',
         owner: 'zjd007',
         admin: "zjd007",
-        id: '2022-03-21T21-55-13',
+        id: '2022-03-26T15-39-10',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1197,9 +1254,10 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/03269708.html">
                     <div class="card-image">
@@ -1220,9 +1278,9 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1231,6 +1289,7 @@ new Valine({
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1246,7 +1305,7 @@ new Valine({
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2022/032154387.html">
@@ -1282,7 +1341,6 @@ YOLO是目标检测模型。
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
